@@ -11,9 +11,26 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [CustomAppBar()],
+      children: const [
+        CustomAppBar(),
+        CustomListViewItem(),
+      ],
     );
   }
 }
 
+class CustomListViewItem extends StatelessWidget {
+  const CustomListViewItem({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.fill,
+          image: AssetImage(AssetsData.testImage),
+        ),
+      ),
+    );
+  }
+}
