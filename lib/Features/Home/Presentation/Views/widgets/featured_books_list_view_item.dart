@@ -14,7 +14,7 @@ class FeaturedBooksListViewItem extends StatelessWidget {
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            return const CustomListViewItem();
+            return const FeaturedListViewItem();
           },
         ),
       ),
