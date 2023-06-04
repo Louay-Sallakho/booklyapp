@@ -1,9 +1,8 @@
-import 'package:booklyapp/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'custom_app_bar.dart';
+import 'custom_list_view_item.dart';
+import 'featured_books_list_view_item.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -13,24 +12,10 @@ class HomeViewBody extends StatelessWidget {
     return Column(
       children: const [
         CustomAppBar(),
-        CustomListViewItem(),
+        FeaturedBooksListViewItem(),
       ],
     );
   }
 }
 
-class CustomListViewItem extends StatelessWidget {
-  const CustomListViewItem({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          fit: BoxFit.fill,
-          image: AssetImage(AssetsData.testImage),
-        ),
-      ),
-    );
-  }
-}
