@@ -1,6 +1,8 @@
+import 'package:booklyapp/core/utils/assets.dart';
 import 'package:booklyapp/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
+import 'best_seller_list_view_item.dart';
 import 'custom_app_bar.dart';
 import 'featured_books_list_view_item.dart';
 import 'meduim_title.dart';
@@ -10,9 +12,9 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         CustomAppBar(),
         FeaturedBooksListViewItem(),
         SizedBox(
@@ -20,10 +22,9 @@ class HomeViewBody extends StatelessWidget {
         ),
         MediumTitle(
           text: 'Best Seller',
-        )
+        ),
+        BestSellerListViewItem()
       ],
     );
   }
 }
-
-
