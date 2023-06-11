@@ -1,5 +1,4 @@
-import 'package:booklyapp/core/utils/assets.dart';
-import 'package:booklyapp/core/utils/styles.dart';
+
 import 'package:flutter/material.dart';
 
 import 'best_seller_list_view_item.dart';
