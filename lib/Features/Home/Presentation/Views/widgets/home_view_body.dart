@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'best_seller_list_view_item.dart';
@@ -21,6 +20,9 @@ class HomeViewBody extends StatelessWidget {
         ),
         MediumTitle(
           text: 'Best Seller',
+        ),
+        SizedBox(
+          height: 20,
         ),
         BestSellerListViewItem()
       ],
