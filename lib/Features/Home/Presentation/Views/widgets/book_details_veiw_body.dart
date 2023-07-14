@@ -1,3 +1,4 @@
+import 'package:booklyapp/Features/Home/Presentation/Views/widgets/book_rating.dart';
 import 'package:booklyapp/Features/Home/Presentation/Views/widgets/custom_book_image.dart';
 import 'package:booklyapp/core/utils/styles.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,12 @@ class BookDetailsViewBody extends StatelessWidget {
               'JK. Rowling',
               style: Styles.textStyle18
                   .copyWith(color: Colors.white.withOpacity(.4)),
+            ),
+            const SizedBox(
+              height: 18,
+            ),
+            const BookRating(
+              mainAxisAlignment: MainAxisAlignment.center,
             )
           ],
         ),
